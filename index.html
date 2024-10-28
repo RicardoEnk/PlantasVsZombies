@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta charset="utf-8" />
+</head>
+
+<body>
+
+  <div id="start-screen" style="
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-image: url('img/gamestartjpg.jpg');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;">
+    <button onclick="startGame()" style="
+     padding: 20px 50px;
+     font-size: 18px;
+     margin-top: 30%;
+     background-color: darkgreen;
+     color: white;
+     border: 2px solid white;
+     border-radius: 5px;
+     font-weight: bold;
+     cursor: pointer;
+     transition: background-color 0.3s;
+   " onmouseover="this.style.backgroundColor='lightgreen';" onmouseout="this.style.backgroundColor='darkgreen';">PLAY
+    </button>
+  </div>
+
+  <div id="p5_loading" style="display: none;"></div>
+
+  <script src="coroutines.js"></script>
+  <script src="GameObject.js"></script>
+  <script src="Sun.js"></script>
+  <script src="Pea.js"></script>
+  <script src="Character.js"></script>
+  <script src="Plant.js"></script>
+  <script src="Sunflower.js"></script>
+  <script src="Peashooter.js"></script>
+  <script src="Zombie.js"></script>
+  <script src="Seeds.js"></script>
+  <script src="Backyard.js"></script>
+  <script src="sketch.js"></script>
+
+</body>
+
+</html>
